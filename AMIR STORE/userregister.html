@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Registration </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 40px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .field {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .field i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #999;
+        }
+
+        .field input {
+            width: 100%;
+            padding: 10px 30px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .field input[type="text"]:focus,
+        .field input[type="password"]:focus {
+            outline: none;
+            border-color: #719ece;
+        }
+
+        .field.space {
+            margin-bottom: 40px;
+        }
+
+        .fa-user,
+        .fa-lock {
+            font-family: FontAwesome;
+        }
+
+        input[type="submit"] {
+            background-color: #719ece;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #548ac2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-img">
+       <h2>User Registration Form</h2>
+      <form action="index.php" method="post">
+        <div class="field">
+            <i class="fa fa-user"></i>
+            <input type="text" required placeholder="email" name="username">
+        </div>
+        <div class="field space">
+            <span class="fa fa-lock"></span>
+            <input type="password" class="password" required placeholder="password" name="password">
+        </div>
+
+        <input type="submit" value="Submit">
+        </div>
+       </form>
+    </div>
+</body>
+
+</html>
